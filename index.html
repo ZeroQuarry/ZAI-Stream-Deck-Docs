@@ -96,7 +96,7 @@
 				<li>For the agent keys: the <a href="#bridge">ZCode bridge</a> (one command, run once).</li>
 			</ul>
 
-			<h2>Quick start</h2>
+			<h2 id="quick-start">Quick start</h2>
 			<ul>
 				<li><strong>Install</strong> the plugin from the Elgato Marketplace and drag any action onto a key.</li>
 				<li><strong>Open any key's property inspector</strong> — every action shares one account block at the top.
@@ -106,18 +106,21 @@
 					(<code>zai…3456</code>) is ever shown.</li>
 				<li><strong>Press Test connection</strong> — a one-shot quota read that reports the windows it found
 					(<code>global · plan pro · 5H 82% · 7D 50%</code>).</li>
+				<li><strong>Press any key before it is configured</strong> and the docs open at the section that
+					unblocks you — quick start for the account keys, the bridge setup for the agent keys.</li>
 				<li><strong>Set the refresh cadence</strong> (15 s to 1 h, 60 s by default; failures back off
 					exponentially to five minutes) and pick your region. The plugin re-reads immediately whenever your
 					computer wakes up.</li>
 			</ul>
 
-			<h2>The seven actions</h2>
+			<h2>The eight actions</h2>
 			<div class="actions">
 				<div class="action"><h3>What Remains</h3><p>Concentric rainbows whose filled length is the quota <strong>left</strong> in each window, with the reset countdown under the arch.</p></div>
 				<div class="action"><h3>Reset Timer</h3><p>Live countdown to the next reset: the shorter window on top, the longer one beneath, ticking on the key's own clock.</p></div>
 				<div class="action"><h3>Pace</h3><p>How long each window lasts at the pace it is being drained — <code>~2H 10M</code>, or <code>steady</code> when nothing is running.</p></div>
 				<div class="action"><h3>24h Tokens</h3><p>A sparkline of token burn across the last day, the current hour brightest, with the 24-hour total.</p></div>
 				<div class="action"><h3>Status / Refresh</h3><p>Plan label, tokens used in the last 24 hours and data freshness. Press to refresh any time.</p></div>
+				<div class="action"><h3>Model Mix</h3><p>Which models burned the last day's tokens — the leader's share, then the runner-up.</p></div>
 				<div class="action"><h3>Agent Confirm</h3><p>Lights up when ZCode awaits a permission decision. <strong>Press</strong> to approve, <strong>hold</strong> to deny.</p></div>
 				<div class="action"><h3>Agent Stopped</h3><p>Lights up green when a ZCode thread finishes responding, cleared by the next prompt or a press.</p></div>
 			</div>
